@@ -1,1 +1,30 @@
 /*  your css code here. If applicable */
+.modal {
+
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	
+}
+
+.modal-content {
+  width: 600px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	animation: dropIn 0.4s ease-out;
+}
+
+@keyframes dropIn {
+  from {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+}
