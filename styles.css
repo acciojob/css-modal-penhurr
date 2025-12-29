@@ -1,13 +1,15 @@
-/*  your css code here. If applicable */
-.modal {
+body {
+  font-family: Arial, sans-serif;
+}
 
+
+.modal {
+  display: none;
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.5);
-  display: flex;
   justify-content: center;
   align-items: center;
-	
 }
 
 .modal-content {
@@ -15,16 +17,27 @@
   background: white;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-	animation: dropIn 0.4s ease-out;
 }
 
-@keyframes dropIn {
-  from {
-    transform: translateY(-500px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(50px);
-    opacity: 1;
-  }
+
+.modal-header {
+  background: #4CAF50;
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.modal-body {
+  padding: 15px;
+}
+
+
+.close {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
 }
